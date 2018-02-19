@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "List", "List\List.csproj", "{39CF1D2C-8CC3-4D2B-BAF6-6DE05B59725C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "List", "List", "{0C0CFED0-3FEA-49FB-990F-D15E9B69DCC2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ListTest", "ListTest", "{7A885FEC-46F0-495B-9327-5C1EFF3975FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListTest", "ListTest\ListTest.csproj", "{F2C6B98C-8884-487E-8222-B31BAB651018}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39CF1D2C-8CC3-4D2B-BAF6-6DE05B59725C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39CF1D2C-8CC3-4D2B-BAF6-6DE05B59725C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39CF1D2C-8CC3-4D2B-BAF6-6DE05B59725C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39CF1D2C-8CC3-4D2B-BAF6-6DE05B59725C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2C6B98C-8884-487E-8222-B31BAB651018}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2C6B98C-8884-487E-8222-B31BAB651018}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2C6B98C-8884-487E-8222-B31BAB651018}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2C6B98C-8884-487E-8222-B31BAB651018}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{39CF1D2C-8CC3-4D2B-BAF6-6DE05B59725C} = {0C0CFED0-3FEA-49FB-990F-D15E9B69DCC2}
+		{F2C6B98C-8884-487E-8222-B31BAB651018} = {7A885FEC-46F0-495B-9327-5C1EFF3975FA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A85778CF-29F8-4BCA-8A0D-0CFFFC320B3A}
+	EndGlobalSection
+EndGlobal

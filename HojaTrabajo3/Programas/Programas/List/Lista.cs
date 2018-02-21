@@ -10,13 +10,19 @@ namespace Programas
     {
         public abstract int Length { get; }
 
-        //public abstract bool Get(int i, out int i2);
-
         public abstract void Push(T obj);
 
         public abstract bool Set(int i, T obj);
 
-        public abstract void Push(IList<T> list);
+        public void Push(IList<T> list)
+        {
+            for (int i = 0; i < list.Length; i++)
+            {
+                T nuevo = new T();
+                list.Get(i, out nuevo);
+                Push(nuevo);
+            }
+        }
 
         public abstract bool Get(int i, out T obj);
     }

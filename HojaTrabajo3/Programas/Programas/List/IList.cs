@@ -8,7 +8,6 @@ namespace Programas
 {
     public interface IList<T> where T: new()
     {
-        //bool Get(int i, out int i2);
         bool Set(int i, T obj);
         void Push(T obj);
         int Length { get; }

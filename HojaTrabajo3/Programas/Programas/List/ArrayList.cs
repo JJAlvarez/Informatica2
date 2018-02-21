@@ -12,16 +12,6 @@
             Almacenamiento = arreglo;
         }
 
-        public override void Push(IList<T> list)
-        {
-            for (int i = 0; i < list.Length; i++)
-            {
-                T nuevo = new T();
-                Get(i, out nuevo);
-                Push(nuevo);
-            }
-        }
-
         public override void Push(T obj)
         {
             T[] temp = new T[Almacenamiento.Length + 1];
@@ -32,19 +22,6 @@
             temp[temp.Length - 1] = obj;
             Almacenamiento = temp;
         }
-
-        //public override bool Get(int i, out int i2)
-        //{
-        //    i2 = 0;
-        //    if (i >= Length)
-        //    {
-        //        return false;
-        //    } else
-        //    {
-        //        i2 = i;
-        //        return true;
-        //    }
-        //}
 
         public override bool Set(int i, T obj)
         {

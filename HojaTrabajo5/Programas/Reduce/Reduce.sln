@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reduce", "Reduce\Reduce.csproj", "{2514155A-BA9B-4C96-B5F4-D80931004D47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReduceTest", "ReduceTest\ReduceTest.csproj", "{E39E28A4-795A-404C-8875-419E75ACEBCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2514155A-BA9B-4C96-B5F4-D80931004D47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2514155A-BA9B-4C96-B5F4-D80931004D47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2514155A-BA9B-4C96-B5F4-D80931004D47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2514155A-BA9B-4C96-B5F4-D80931004D47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E39E28A4-795A-404C-8875-419E75ACEBCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E39E28A4-795A-404C-8875-419E75ACEBCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E39E28A4-795A-404C-8875-419E75ACEBCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E39E28A4-795A-404C-8875-419E75ACEBCB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4B0AC899-06BF-4E37-986B-D7B611F3FC72}
+	EndGlobalSection
+EndGlobal

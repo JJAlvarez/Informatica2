@@ -1,0 +1,77 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr} % Required for custom headers
+\usepackage{lastpage} % Required to determine the last page for the footer
+\usepackage{extramarks} % Required for headers and footers
+\usepackage[usenames,dvipsnames]{color} % Required for custom colors
+\usepackage{graphicx} % Required to insert images
+\usepackage{listings} % Required for insertion of code
+\usepackage{courier} % Required for the courier font
+\usepackage{multirow}
+\usepackage{hyperref}
+
+% Margins
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\linespread{1.1} % Line spacing
+
+\definecolor{MyDarkGreen}{rgb}{0.0,0.4,0.0} % This is the color used for comments
+\lstloadlanguages{c} % Load Perl syntax for listings, for a list of other languages supported see: ftp://ftp.tex.ac.uk/tex-archive/macros/latex/contrib/listings/listings.pdf
+\lstset{language=[sharp]c, % Use Perl in this example
+        frame=single, % Single frame around code
+        basicstyle=\small\ttfamily, % Use small true type font
+        keywordstyle=[1]\color{Blue}\bf, % Perl functions bold and blue
+        keywordstyle=[2]\color{Purple}, % Perl function arguments purple
+        keywordstyle=[3]\color{Blue}\underbar, % Custom functions underlined and blue
+        identifierstyle=, % Nothing special about identifiers                                         
+        commentstyle=\usefont{T1}{pcr}{m}{sl}\color{MyDarkGreen}\small, % Comments small dark green courier font
+        stringstyle=\color{Purple}, % Strings are purple
+        showstringspaces=false, % Don't put marks in string spaces
+        tabsize=5, % 5 spaces per tab
+        %
+        % Put standard Perl functions not included in the default language here
+        morekeywords={rand},
+        %
+        % Put Perl function parameters here
+        morekeywords=[2]{on, off, interp},
+        %
+        % Put user defined functions here
+        morekeywords=[3]{test},
+       	%
+        morecomment=[l][\color{Blue}]{...}, % Line continuation (...) like blue comment
+        numbers=left, % Line numbers on left
+        firstnumber=1, % Line numbers start with line 1
+        numberstyle=\tiny\color{Blue}, % Line numbers are blue and small
+        stepnumber=5 % Line numbers go in steps of 5
+}
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}}
+
+\newcommand{\perlscript}[2]{
+\begin{itemize}
+\item[]\lstinputlisting[caption=#2,label=#1]{#1.cs}
+\end{itemize}
+}
+
+\title{Hoja de trabajo #4}
+\author{Javier Jose Alvarez Flores, 20171074, alvarez171074@unis.edu.gt}
+\date{25 de febrero del 2018}
+
+\begin{document}
+
+\maketitle
+\section{Explicacion}
+Las ventajas que existen de utilizar metodos genericos a diferencia de no utilizarlos radican en varias partes, la primera de todas es que al no utilizar tipos genericos yo no puedo utilizar el mismo metodo (en este caso el metodo Head) para poder obtener el primer indice de un array de strings si el metodo solo recibe enteros, tendria que escribir otro metodo Head para poder hacer esta accion, y asi con cada tipo que me interese. 
+\\\\
+Esta problematica tiene solucion la cual es obtener un arreglo de tipo object ya que de object heredan todos. Pero esto tiene un problema. Al hacer esto yo no puedo controlar que tipo de datos ha sido enviado ni que tipo de dato sera retornado, lo cual se puede ver en el ejemplo brindado, el compilador no presentara problema ya que tanto int como string heredad de object, y al momento de obtner la respuesta necesito castearla al tipo de dato de mi interes, lo caal lansaria una excepcion debido a que no puedo castear implicitamente un string a un entero, causando un error en tiempo de ejecucion. 
+\\\\
+Esto se soluciona con los metodos genericos, ya que con ellos puedo controlar el tipo de dato que se envia como parametro y tambien puedo restringir el retorno, tambien evitanto la necesidad del casteo de la respuesta ya que conozco el tipo que sera retornado.
+\\\\
+\perlscript{ejemplo}{}
+
+\end{document}

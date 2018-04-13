@@ -31,11 +31,14 @@ namespace BinTreeTests
             sut.Insert(3);
             sut.Insert(11);
             sut.Insert(99);
-            sut.Insert(7)
-                ;
+            sut.Insert(7);
+
             int[] result = sut.ToArray();
 
-            Assert.Equal(new int[] { 3, 7, 8, 10, 11, 15, 26, 99 }, result);
+            for (int i = 0; i < result.Length - 1; i++)
+            {
+                Assert.True(result[i] <= result[i + 1]);
+            }
         }
     }
 }
